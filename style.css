@@ -1,0 +1,115 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #555;
+  color: #fff;
+}
+#map {
+  margin: 5px 0 0 5px;
+  float: left;
+}
+#map, #genimg {
+  background-image: url("op0.jpg");
+}
+#genimg {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+}
+#genimg > img{
+  width: inherit;
+  height: inherit;
+}
+#right {
+  margin-top: 5px;
+  float: right;
+}
+.tile {
+  display: inline-block;
+  border: 1px solid #000;
+  transition: all .1s linear;
+}
+#map > .tile:hover {
+  box-shadow: inset 0 0 6px #000;
+  opacity: 0.8;
+  transition: all .1s linear;
+}
+#palette {
+  padding: 6px;
+  float: right;
+  background-color: #222;
+  border-radius: 4px 0 0 4px;
+}
+.palette-line {
+  padding: 4px;
+  background-color: #111;
+  border-radius: 3px;
+}
+.cstatus {
+  width: 50px;
+  background-color: #777;
+}
+#palette > tbody > tr > td > .tile:hover {
+  cursor: pointer;
+}
+#palette > tbody > tr:nth-child(1) > td > .tile {
+  background-image: url("op0.jpg");
+  background-size: contain;
+}
+#palette > tbody > tr > td > .tile {
+  box-shadow: none;
+}
+#panel {
+  float: left;
+}
+#panel > .button:first-child {
+  margin-top: 0;
+}
+#hiddeni {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+  background-color: #000;
+  border-radius: 6px 0 0 0;
+}
+.button {
+  font-family: sans-serif;
+  padding: 6px;
+  border-radius: 6px;
+  box-shadow: 0 5px 0 #a50000;
+  outline: 0;
+  text-align: center;
+  color: #FFF;
+  background-color: #c50000;
+  transition: all .1s linear;
+}
+.button:active {
+  box-shadow: 0 2px 0 #a50000;
+  transform: translateY(4px);
+}
+#panel > .button {
+  margin: 12px 6px;
+}
+.button:hover {
+  cursor: pointer;
+}
+#sendC {
+  width: calc(100% - 12px);
+  margin: 6px 0;
+}
+#closeimg {
+  float: right;
+  cursor: pointer;
+}
+#bg {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("imagedoc-darknoise.png");
+}
